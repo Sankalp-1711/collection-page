@@ -1,0 +1,568 @@
+// // @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+
+// // .navbar {
+// //     position: relative;
+// //     max-width: 96%;
+// //     margin: 0 auto;
+// //     z-index: 10;
+// //     // padding: 16px 32px;
+// //     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+// //     &--transparent {
+// //       background-color: transparent;
+// //       color: white;
+// //     }
+    
+// //     &--solid {
+// //       background-color: white;
+// //       color: black;
+// //       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// //     }
+// //     .navbar__branding{
+// //         text-align: center;
+// //     }
+    
+// //     .navbar__title {
+// //       font-family: 'Galada';
+// //       font-size: 40px;
+// //       text-align: center;
+      
+// //       &--white {
+// //         color: white;
+// //       }
+      
+// //       &--black {
+// //         color: black;
+// //       }
+// //     }
+    
+// //     .navbar__subtitle {
+// //       font-size: 24px;
+// //       text-align: center;
+// //     }
+    
+// //     .navbar__menu-button {
+// //       display: block;
+// //       background: none;
+// //       border: none;
+// //       outline: none;
+// //       cursor: pointer;
+// //       font-size: 32px;
+// //     }
+    
+// //     .navbar__mobile-menu {
+// //       position: fixed;
+// //       top: 0;
+// //       left: 0;
+// //       right: 0;
+// //       background-color: rgba(0, 0, 0, 0.9);
+// //       text-align: center;
+// //       padding: 32px;
+// //       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+// //       transform: translateY(-100%);
+// //       opacity: 0;
+      
+// //       &--open {
+// //         transform: translateY(0);
+// //         opacity: 1;
+// //       }
+      
+// //       .navbar__close-button {
+// //         position: absolute;
+// //         top: 16px;
+// //         right: 16px;
+// //         font-size: 32px;
+// //         background: none;
+// //         border: none;
+// //         cursor: pointer;
+// //       }
+      
+// //       .navbar__link {
+// //         font-size: 18px;
+// //         font-weight: bold;
+// //         margin: 16px 0;
+// //         cursor: pointer;
+// //         text-decoration: none;
+// //         color: inherit;
+        
+// //         &:hover {
+// //           color: gray;
+// //         }
+// //       }
+      
+// //       .navbar__icons {
+// //         margin-top: 16px;
+        
+// //         .navbar__icon {
+// //           font-size: 20px;
+// //           margin: 0 8px;
+// //           cursor: pointer;
+// //           transition: color 0.3s;
+          
+// //           &:hover {
+// //             color: gray;
+// //           }
+// //         }
+// //       }
+// //     }
+    
+// //     .navbar__desktop-menu {
+// //       display: flex;
+// //       justify-content: space-between;
+// //       margin-top: 16px;
+      
+// //       .navbar__link {
+// //         margin: 0 16px;
+// //         font-size: 18px;
+// //         // font-weight: bold;
+// //         text-decoration: none;
+// //         position: relative;
+// //         // list-style-type: none;
+// //         color: black;
+        
+// //         &:hover::after {
+// //           width: 100%;
+// //         }
+        
+// //         &::after {
+// //           content: '';
+// //           position: absolute;
+// //           bottom: -4px;
+// //           left: 0;
+// //           width: 0;
+// //           height: 2px;
+// //           background-color: white;
+// //           transition: width 0.5s ease-in-out;
+// //         }
+// //       }
+      
+// //       .navbar__icons {
+// //         display: flex;
+// //         gap: 16px;
+        
+// //         .navbar__icon {
+// //           font-size: 20px;
+// //           cursor: pointer;
+// //           transition: color 0.3s;
+          
+// //           &:hover {
+// //             color: gray;
+// //           }
+// //         }
+// //       }
+// //     }
+    
+// //     .navbar__search {
+// //       display: flex;
+// //       align-items: center;
+// //       gap: 8px;
+      
+// //       .navbar__search-input {
+// //         background-color: transparent;
+// //         border: none;
+// //         border-bottom: 1px solid;
+// //         padding: 8px;
+// //         width: 200px;
+// //         color: inherit;
+        
+// //         &:focus {
+// //           outline: none;
+// //         }
+// //       }
+// //     }
+// //   }
+  
+
+// @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+// .navbar {
+//   position: relative;
+//   max-width: 96%;
+//   margin: 2rem auto;
+//   z-index: 10;
+//   font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+//   &--transparent {
+//     background-color: transparent;
+//     color: white;
+//   }
+  
+//   &--solid {
+//     background-color: white;
+//     color: black;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .navbar__branding {
+//     text-align: center;
+//   }
+  
+//   .navbar__title {
+//     font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//     font-size: 40px;
+//     text-align: center;
+    
+//     &--white {
+//       color: white;
+//     }
+    
+//     &--black {
+//       color: black;
+//     }
+//   }
+  
+//   .navbar__subtitle {
+//     font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//     font-size: 24px;
+//     text-align: center;
+//   }
+  
+//   .navbar__menu-button {
+//     display: block;
+//     background: none;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     font-size: 32px;
+//   }
+  
+//   .navbar__mobile-menu {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     background-color: rgba(0, 0, 0, 0.9);
+//     text-align: center;
+//     padding: 32px;
+//     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+//     transform: translateY(-100%);
+//     opacity: 0;
+    
+//     &--open {
+//       transform: translateY(0);
+//       opacity: 1;
+//     }
+    
+//     .navbar__close-button {
+//       position: absolute;
+//       top: 16px;
+//       right: 16px;
+//       font-size: 32px;
+//       background: none;
+//       border: none;
+//       cursor: pointer;
+//     }
+    
+//     .navbar__link {
+//       font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//       font-size: 1rem;
+//       font-weight: bold;
+//       margin: 16px 0;
+//       cursor: pointer;
+//       text-decoration: none;
+//       color: inherit;
+      
+//       &:hover {
+//         color: gray;
+//       }
+//     }
+    
+//     .navbar__icons {
+//       margin-top: 16px;
+      
+//       .navbar__icon {
+//         font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//         font-size: 20px;
+//         margin: 0 8px;
+//         cursor: pointer;
+//         transition: color 0.3s;
+        
+//         &:hover {
+//           color: gray;
+//         }
+//       }
+//     }
+//   }
+  
+//   .navbar__desktop-menu {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 16px;
+    
+//     .navbar__link {
+//       font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//       margin: 0 16px;
+//       font-size: 1rem;
+//       text-decoration: none;
+//       position: relative;
+//       color: black;
+      
+//       &:hover::after {
+//         width: 100%;
+//       }
+      
+//       &::after {
+//         content: '';
+//         position: absolute;
+//         bottom: -4px;
+//         left: 0;
+//         width: 0;
+//         height: 2px;
+//         background-color: white;
+//         transition: width 0.5s ease-in-out;
+//       }
+//     }
+    
+//     .navbar__icons {
+//       display: flex;
+//       gap: 16px;
+      
+//       .navbar__icon {
+//         font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//         font-size: 1rem;
+//         cursor: pointer;
+//         transition: color 0.3s;
+        
+//         &:hover {
+//           color: gray;
+//         }
+//       }
+//     }
+//   }
+  
+//   .navbar__search {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+    
+//     .navbar__search-input {
+//       font-family: 'Urbanist', sans-serif;  // Apply Urbanist font
+//       background-color: transparent;
+//       border: none;
+//       border-bottom: 1px solid;
+//       padding: 8px;
+//       width: 200px;
+//       color: inherit;
+//       font-size: 1rem;
+      
+//       &:focus {
+//         outline: none;
+//       }
+//     }
+//   }
+// }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.navbar {
+  position: relative;
+  max-width: 96%;
+  margin: 2rem auto;
+  z-index: 10;
+  font-family: 'Urbanist', sans-serif; // Apply Urbanist font
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &--transparent {
+    background-color: transparent;
+    color: white;
+  }
+
+  &--solid {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar__branding {
+    text-align: center;
+  }
+
+  .navbar__menu-button {
+    display: none; // Initially hidden
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 32px;
+  }
+
+  .navbar__mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 32px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    // width: 100%;
+
+    &--open {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .navbar__close-button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 32px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .navbar__link {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 16px 0;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: gray;
+      }
+    }
+
+    .navbar__icons {
+      margin-top: 16px;
+
+      .navbar__icon {
+        font-size: 20px;
+        margin: 0 8px;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .navbar__desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    .navbar__link {
+      margin: 0 16px;
+      font-size: 1rem;
+      text-decoration: none;
+      position: relative;
+      color: black;
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.5s ease-in-out;
+      }
+    }
+
+    .navbar__icons {
+      display: flex;
+      gap: 16px;
+      color: black;
+
+      .navbar__icon {
+        font-size: 1rem;
+        cursor: pointer;
+        // transition: color 0.3s;
+       
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .navbar__search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .navbar__search-input {
+      background-color: transparent;
+      border: none;
+      // border-bottom: 1px solid;
+      padding: 0px 8px 8px 8px;
+      width: 100px;
+      color: inherit;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  // Media query for screens smaller than 768px
+  @media (max-width: 915px) {
+    .navbar__desktop-menu {
+      display: none; // Hide the desktop menu
+    }
+    .menu-search{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar__menu-button {
+      display: block; // Show the hamburger button
+    }
+
+    .navbar__mobile-menu {
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      a{
+        display: flex;
+        flex-direction: column;
+
+      }
+      .navbar__icons{
+        color: white;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    }
+  }
+
+  // Media query for screens smaller than 480px
+  @media (max-width: 480px) {
+    .navbar__menu-button {
+      font-size: 28px;
+      display: block; // Smaller button size for tiny screens
+    }
+
+    .navbar__link {
+      font-size: 0.875rem; // Slightly smaller font for links
+    }
+    .navbar__mobile-menu {
+      display: block;
+      width: 100vw; // Ensure mobile menu does not exceed viewport width
+      padding: 1rem 0rem; // Reset any padding that might cause overflow
+      margin: 0; // Reset any margin that might cause overflow
+      box-sizing: border-box; // Ensure padding and borders are included in the width
+      overflow-x: hidden; // Prevent horizontal scrolling on small screens
+    }
+  }
+}
